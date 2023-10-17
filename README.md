@@ -1,2 +1,2 @@
 # learn_github
-学习GitHu和Git
+学习GitHub和Git

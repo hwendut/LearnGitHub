@@ -1,5 +1,5 @@
 # Git 演示
-***git详解帖子：***https://blog.csdn.net/yannzhenguo/article/details/122059587
+***git详解帖子：*** https://blog.csdn.net/yannzhenguo/article/details/122059587
 ## Git是什么？
 
 Git的三个概念：提交commit、仓库repository、分支branch
@@ -61,7 +61,7 @@ git merge <branchname>
 git merge --abort
 ```
 
-*** 一般主分支main只作为能跑起来的***没有问题的代码
+***一般主分支main只作为能跑起来的***没有问题的代码
 
 1. ***长周期在分支中完成***
 2. 创建子分支一般在主分支上进行，因为主分支是代码分支的起点和终点
@@ -230,24 +230,29 @@ git config --global user.email "邮箱地址"
 
    ​	url = https://用户名:密码@github.com/用户名/仓库名.git
 
-   ***拉取线上仓库：***git pull
+   ***拉取线上仓库：*** git pull
 
    ***注意：***
 
    每天工作的第一件事就是先git pull拉取线上最新的版本：每天下班前要做的是git push，将本地代码提交到线上仓库
 
 2. 基于SSH协议
+   ***官方文档***：https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys
 
    该方式与前面HTTPS方式相比，**只是影响GitHub对于用户的身份鉴权方式**，对于git的具体操作（如提交本地、添加注释、提交远程等操作）没有任何影响。
 
    生成公私钥对指令（需先自行安装OpenSSH）：ssh-keygen -t rsa -C “注册邮箱”
+   -t 设置加密算法，这里设置为rsa
+   -C 是添加注释
+   -f 指定密钥位置
 
 ​		步骤：
-
 ​			1. 生成客户端公私钥文件
-
+         ssh-keygen
 ​			2. 将公钥上传到GitHub
-
+         登录GitHub后台，在用户设置中找到"SSH and GPG keys" --> "New SSH key", 填入公钥
+         3. 本地使用git-bash测试
+         ssh -T git@github.com
 ### 2.3 分支管理
 
 简单理解为项目里的**某个模块或功能**

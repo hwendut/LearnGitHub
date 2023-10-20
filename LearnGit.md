@@ -239,7 +239,10 @@ git config --global user.email "邮箱地址"
    每天工作的第一件事就是先git pull拉取线上最新的版本：每天下班前要做的是git push，将本地代码提交到线上仓库
 
 2. 基于SSH协议
+
    ***官方文档***：https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys
+
+   ***TortoiseGit配置SSH***：https://blog.csdn.net/weixin_45481821/article/details/131296349
 
    该方式与前面HTTPS方式相比，**只是影响GitHub对于用户的身份鉴权方式**，对于git的具体操作（如提交本地、添加注释、提交远程等操作）没有任何影响。
 
@@ -250,12 +253,15 @@ git config --global user.email "邮箱地址"
 
 ​		步骤：
 ​			1. 生成客户端公私钥文件
-         ssh-keygen
+​         ssh-keygen
 ​			2. 将公钥上传到GitHub
-         登录GitHub后台，在用户设置中找到"SSH and GPG keys" --> "New SSH key", 填入公钥
-         3. 本地使用git-bash测试
-         ssh -T git@github.com
+​         登录GitHub后台，在用户设置中找到"SSH and GPG keys" --> "New SSH key", 填入公钥
+​         3. 本地使用git-bash测试
+​         ssh -T git@github.com
+
 ### 2.3 分支管理
+
+***TortoiseGit管理分支***：http://joelabrahamsson.com/remote-branches-with-tortoisegit/
 
 简单理解为项目里的**某个模块或功能**
 

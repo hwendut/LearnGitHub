@@ -1,7 +1,7 @@
 # Git 演示
 ***git详解帖子1：*** https://blog.csdn.net/yannzhenguo/article/details/122059587
 
-***git详解帖子2：***https://zhuanlan.zhihu.com/p/604138332?utm_id=0
+***git详解帖子2：*** https://zhuanlan.zhihu.com/p/604138332?utm_id=0
 
 ## Git是什么？
 
@@ -246,7 +246,7 @@ git config --global user.email "邮箱地址"
    ***官方文档***：https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys
 
    ***TortoiseGit配置SSH***：https://blog.csdn.net/weixin_45481821/article/details/131296349
-
+   https://blog.csdn.net/m0_37467586/article/details/105164392
    该方式与前面HTTPS方式相比，**只是影响GitHub对于用户的身份鉴权方式**，对于git的具体操作（如提交本地、添加注释、提交远程等操作）没有任何影响。
 
    生成公私钥对指令（需先自行安装OpenSSH）：ssh-keygen -t rsa -C “注册邮箱”

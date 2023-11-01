@@ -1,5 +1,8 @@
 # Git 演示
-***git详解帖子：*** https://blog.csdn.net/yannzhenguo/article/details/122059587
+***git详解帖子1：*** https://blog.csdn.net/yannzhenguo/article/details/122059587
+
+***git详解帖子2：***https://zhuanlan.zhihu.com/p/604138332?utm_id=0
+
 ## Git是什么？
 
 Git的三个概念：提交commit、仓库repository、分支branch

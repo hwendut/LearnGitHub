@@ -25,7 +25,7 @@ git add -A // 全部文件提交到暂存区
 git commit -m "提交信息"
 ```
 
-工作区----- git add \<file> \-\-\-\-> 暂存区 ----- git commit -----> 仓库
+工作区----- git add \<file> ----> 暂存区 ----- git commit -----> 仓库
 
 ***一般不这么做***
 
@@ -130,7 +130,7 @@ Git本地操作的三个区域
 
 暂存区	暂存已经修改的文件最后统一提交到git仓库中
 
-​	↓		git commit -m “提交描述”
+​	↓		git commit -m "提交描述"
 
 Git repository	最终确定的文件保存到仓库，成为一个新的版本，并且对他人可见
 
@@ -288,7 +288,7 @@ git config --global user.email "邮箱地址"
 
 git branch
 
-***注意1：*** 当前分支前面有个标记“\*”
+***注意1：*** 当前分支前面有个标记“*”
 
 git branch -d
 
